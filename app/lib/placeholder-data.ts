@@ -48,7 +48,14 @@ const customers = [
   },
 ];
 
-const invoices = [
+interface IInvoice  {
+  customer_id : string ,
+  amount : number,
+  status : string,
+  date : string
+}
+
+const invoices : IInvoice[] = [
   {
     customer_id: customers[0].id,
     amount: 15795,
